@@ -15,12 +15,12 @@ def velo_estimate(df, time):
     x1 = df.loc[df['time(s)'] == time+1, 'position(m)'].iloc[0]
     x2 = df.loc[df['time(s)'] == time-1, 'position(m)'].iloc[0]
 
-    v = x1 - x2 / 2
+    v = (x1 - x2) / 2
 
     return v
 
 
-def acceleration(df, time):
+def acceleration(v_prev, v_next):
     """
         Gets the acceleration insight for time 2 & 3
 
@@ -28,11 +28,11 @@ def acceleration(df, time):
         FORMULA : a(t) = ---------------------
                                   2h
     """
+    h = 1
 
-    v1 = df.loc[df['time(s)'] == time+1, 'position(m)'].iloc[0]
-    v2 = df.loc[df['time(s)'] == time-1, 'position(m)'].iloc[0]
-
-    return v1 - v2 / 2
+    return (
+        (v_prev - v_next) / (2*h)
+    )
 
 
 
@@ -40,7 +40,7 @@ def acceleration(df, time):
 def total_change(df): 
 
     return (
-        np.trapz(df['time(s)'], df['position(m)'])
+        np.trapz( df['position(m)'], df['time(s)'])
     )
 
 
@@ -51,8 +51,8 @@ velo_esti2 = velo_estimate(df, 2)
 velo_esti3 = velo_estimate(df, 3)
 velo_esti4 = velo_estimate(df, 4)
 
-acce1 = acceleration(df, 2)
-acce2 = acceleration(df, 3)
+acce1 = acceleration(velo_esti1, velo_esti3)
+acce2 = acceleration(velo_esti2, velo_esti4)
 
 print(df)
 print("\n\n", velo_esti1)
