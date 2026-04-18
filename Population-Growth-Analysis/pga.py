@@ -17,8 +17,6 @@ def growth_rate(df, year):
 
     p = (y1 - y2 ) / 2
 
-    print(y1, y2)
-
     return p
 
 
@@ -26,7 +24,7 @@ def total_change(df):
     """Get the total population change as year goes on"""
 
     return (
-        np.trapezoid(df['population'], df['year'])
+        np.trapz(df['population'], df['year'])
     )
 
 

@@ -20,7 +20,7 @@ def total_volume(df):
     """Get the total volume accumulated"""
 
     return (
-        np.trapezoid(df['volume'], df['time'])
+        np.trapz(df['volume'], df['time'])
     )
 
 
