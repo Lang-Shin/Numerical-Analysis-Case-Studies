@@ -19,7 +19,7 @@ A table showing the instantaneous velocity at t=1, 2, 3, and 4 sseconds. Formula
 <p>
 Compare the total displacement you calculated using the Trapezoidal Rule against the "actual" displacement from your data table.
 </p>
-<img src="">
+<img src="imgs/total_change.png">
 
 <hr>
 
