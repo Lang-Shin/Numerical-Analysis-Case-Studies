@@ -29,11 +29,25 @@ def total_change(df):
     )
 
 
+def predict_population(df, year):
+    """Linear Regression to predict population by the given year"""
+
+    X = df[['year']].values
+    y = df['population'].values
+
+    model = LinearRegression()  # Initialize model
+    model.fit(X,y)              # Train model
+
+    return model.predict(np.array([[year]]))    # return predicted output
+
+
 df = pd.read_csv("Population-Growth-Analysis/population_data.csv")
 
 grate2021 = growth_rate(df, 2021)
 grate2022 = growth_rate(df, 2022)
 grate2023 = growth_rate(df, 2023)
+
+print(predict_population(df, 2025))
 
 print("Total Change : ", total_change(df))
 print("Growth Rate")
