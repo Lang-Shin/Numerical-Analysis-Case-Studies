@@ -47,13 +47,12 @@ grate2021 = growth_rate(df, 2021)
 grate2022 = growth_rate(df, 2022)
 grate2023 = growth_rate(df, 2023)
 
-print(predict_population(df, 2025))
-
-print("Total Change : ", total_change(df))
-print("Growth Rate")
+print("\nTotal Change : ", total_change(df))
+print("\nGrowth Rate: ")
 print("Growth 2021 : ",grate2021)
 print("Growth 2022 : ",grate2022)
 print("Growth 2023 : ",grate2023)
+print("\nPopulation Prediction 2025 : ", predict_population(df, 2025)[0])
 
 
 # VISUALIZATION
