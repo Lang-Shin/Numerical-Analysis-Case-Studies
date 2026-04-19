@@ -1,19 +1,14 @@
 <h2>Velocity Table</h2>
 <p>
-A table showing the instantaneous velocity at t=1, 2, 3, and 4 sseconds. 
-            x(t+1) - x(t-1)
-Formula :---------------------
-                   2
+A table showing the instantaneous velocity at t=1, 2, 3, and 4 sseconds. Formula : x(t+1) - x(t-1) /2.
 </p>
 <img src="imgs/velocity.png">
 <img src="imgs/insight.png">
 <hr>
 
 <h2>Graphs</h2>
-<p>
-<b>Position vs Time</b> : Showing the car's movement
-<b>Velocity vs Time</b> : Showing how the speed changed over the 5-second window.
-</p>
+<p><b>Position vs Time</b> : Showing the car's movement.</p>
+<p><b>Velocity vs Time</b> : Showing how the speed changed over the 5-second window.</p>
 <img src="imgs/graph.png">
 
 <hr>
