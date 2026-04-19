@@ -35,8 +35,6 @@ def acceleration(v_prev, v_next):
     )
 
 
-
-
 def total_change(df): 
 
     return (
@@ -55,14 +53,14 @@ acce1 = acceleration(velo_esti1, velo_esti3)
 acce2 = acceleration(velo_esti2, velo_esti4)
 
 print("\n\nVelocity Estimation : ")
-print("Velocity 1 : ", velo_esti1)
-print("Velocity 2 : ", velo_esti2)
-print("Velocity 3 : ", velo_esti3)
-print("Velocity 4 : ", velo_esti4)
-print("\n\nTotal Change : ", total_change(df))
+print("Velocity 1 : ", velo_esti1, "m/s")
+print("Velocity 2 : ", velo_esti2, "m/s")
+print("Velocity 3 : ", velo_esti3, "m/s")
+print("Velocity 4 : ", velo_esti4, "m/s")
+print("\n\nTotal Change : ", total_change(df), "m/s")
 print("\n\nAcceleration Insight : ")
-print("Acceleration Insight 1 : ", acce1)
-print("Acceleration Insight 2 : ", acce2)
+print("Acceleration Insight 1 : ", acce1, "m/s^2")
+print("Acceleration Insight 2 : ", acce2, "m/s^2")
 
 
 # VISUALIZATION
