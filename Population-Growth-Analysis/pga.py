@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
 
 
 def growth_rate(df, year):
@@ -34,7 +35,11 @@ grate2021 = growth_rate(df, 2021)
 grate2022 = growth_rate(df, 2022)
 grate2023 = growth_rate(df, 2023)
 
-print(total_change(df))
+print("Total Change : ", total_change(df))
+print("Growth Rate")
+print("Growth 2021 : ",grate2021)
+print("Growth 2022 : ",grate2022)
+print("Growth 2023 : ",grate2023)
 
 
 # VISUALIZATION
