@@ -1,6 +1,6 @@
 <h2>Table of Derivatives</h2>
 <p>
- This is a table showing the calculated growth rate for the years 2021, 2022, and 2023. You calculated these using the central difference formula: P'(t) ≈ P(t+1)-P(t-1) / 2.
+ This is a table showing the calculated growth rate for the years 2021, 2022, and 2023.Calculated these using the central difference formula: P'(t) ≈ P(t+1)-P(t-1) / 2.
 </p>
 <img src="imgs/derivatives.png">
 
@@ -15,7 +15,7 @@ Since the data is discrete (yearly), the Trapezoidal Rule helps to estimate the 
 <hr>
 
 <h2>Graphs</h2>
-<p><b>Population vs Time :</b> A line or scatter plot showing the raw data</p>
+<p><b>Population vs Time :</b> A line plot showing the raw data</p>
 <p><b>Growth Rate vs Time :</b> A plot showing how the rate of change shifted year-over-year.</p>
 <img src="imgs/graph.png">
 
