@@ -31,7 +31,7 @@ def acceleration(v_prev, v_next):
     h = 1
 
     return (
-        (v_prev - v_next) / (2*h)
+        (v_next - v_prev) / (2*h)
     )
 
 
@@ -54,14 +54,15 @@ velo_esti4 = velo_estimate(df, 4)
 acce1 = acceleration(velo_esti1, velo_esti3)
 acce2 = acceleration(velo_esti2, velo_esti4)
 
-print(df)
-print("\n\n", velo_esti1)
-print(velo_esti2)
-print(velo_esti3)
-print(velo_esti4)
-print("\n\n", total_change(df))
-print("\n\n", acce1)
-print(acce2)
+print("\n\nVelocity Estimation : ")
+print("Velocity 1 : ", velo_esti1)
+print("Velocity 2 : ", velo_esti2)
+print("Velocity 3 : ", velo_esti3)
+print("Velocity 4 : ", velo_esti4)
+print("\n\nTotal Change : ", total_change(df))
+print("\n\nAcceleration Insight : ")
+print("Acceleration Insight 1 : ", acce1)
+print("Acceleration Insight 2 : ", acce2)
 
 
 # VISUALIZATION
