@@ -33,6 +33,12 @@ volume_accumulated = total_volume(df)
 
 print(f"total acccumulated volume: {volume_accumulated}")
 
+print("\n\n", "Flow Rate")
+print("Flow Rate of 2 : ", frate2)
+print("Flow Rate of 4 : ",frate4)
+print("Flow Rate of 6 : ",frate6)
+print("Flow Rate of 8 : ",frate8)
+
 # VISUALIZATION
 fig, axes = plt.subplots(1, 2, figsize=(13, 6))
 axes[0].plot(df['time'], df['volume'], marker='o', color="#2C7B0A")
