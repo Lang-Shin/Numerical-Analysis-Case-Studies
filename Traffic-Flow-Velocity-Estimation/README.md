@@ -1,8 +1,10 @@
 <h2>Velocity Table</h2>
 <p>
-A table showing the instantaneous velocity at t=1, 2, 3, and 4 sseconds. Formula : x(t+1) - x(t-1) /2.
+A table showing the instantaneous velocity at t=1, 2, 3, and 4 sseconds. Formula : v(t) = x(t+1) - x(t-1) /2.
 </p>
 <img src="imgs/velocity.png">
+
+<p>Acceleration Insight. Formula : a(t) = v(t+h) - x(t-h) / 2*h. where h = 1</p>
 <img src="imgs/insight.png">
 <hr>
 
