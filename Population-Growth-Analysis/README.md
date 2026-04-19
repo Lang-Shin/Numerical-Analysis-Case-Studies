@@ -1,6 +1,6 @@
 <h2>Table of Derivatives</h2>
 <p>
- This is a table showing the calculated growth rate for the years 2021, 2022, and 2023.Calculated these using the central difference formula: P'(t) ≈ P(t+1)-P(t-1) / 2.
+ This is a table showing the calculated growth rate for the years 2021, 2022, and 2023. Calculated using the central difference formula: P'(t) ≈ P(t+1)-P(t-1) / 2.
 </p>
 <img src="imgs/derivatives.png">
 
